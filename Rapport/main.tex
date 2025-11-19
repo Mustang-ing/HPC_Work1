@@ -1,0 +1,159 @@
+\documentclass{rapport}
+
+
+\usepackage{lipsum}
+\usepackage{tikz} 
+\usepackage{listings}
+\usepackage{amsfonts} 
+\usepackage{listings}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[footnote]{acronym}
+\usepackage{fancyhdr}
+\usepackage{helvet}
+\usepackage{svg}
+\usepackage{float}      % Add this to your preamble
+\usepackage{placeins}   % Ensures floats do not cross section boundaries
+\usepackage{caption}
+
+
+
+\pagestyle{fancy}
+\fancyhead{}
+\lhead{\bfseries\leftmark}
+\cfoot{\bfseries\thepage}
+\setlength{\headheight}{14.7pt}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\renewcommand{\thesection}{\arabic{section}} % Sections: 1, 2, 3...
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}} % Subsections: 1.1, 1.2...
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}} % Subsubsections: 1.1.1, 1.1.2...
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{red},
+    breaklines=true,
+    frame=single,
+    captionpos=b,
+}
+
+\title{Rapport Perso TP1} %Titre du fichier
+
+\doublespacing 
+\begin{document}
+\lhead{High Performance Cmputing \textbf{- \titre}}
+
+%----------- Informations du Rapport --------
+\logo{logos/logo2.png}
+\unif{}
+\titre{Rapport TP }
+\sujet{High Performance Cmputin}
+%----------- Inserer l'image-logo içi---------
+\enseignant{ Danielle \textsc{D'Agostino} } %Nom de l'enseignant
+
+
+\eleve{ Aïssa \textsc{Pansan} \\ S9253377}
+
+\newpage
+
+%----------- Initialisation -------------------
+
+\renewcommand*\contentsname{Sommaire}       
+\makenomenclature %Afficher les marges
+\fairepagedegarde %Créer la page de garde
+
+
+%------------ Corps du rapport ----------------
+
+
+
+%------ Proto intégration image -------
+\iffalse
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=15cm]{images/Config_1_3.png}
+    \caption{Configuration}
+\end{figure}
+\FloatBarrier
+
+%- Minipage 
+
+
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=8cm]{images/Q3_a.png}
+\captionof{figure}{Commande 1 - OrganisationUnit = Info2}
+\label{fig:figure}
+\end{minipage}
+\hspace{1.5cm}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=8cm]{images/Q3_b.png}
+\captionof{figure}{Commande 2 -OrganisationUnit = Users}
+\label{fig:figure}
+\end{minipage}
+
+\fi
+
+\section{Description of the code}
+
+The following program has been made to compute the Discrete Fourier Transform algorithm.
+We execute the following steps : 
+\begin{enumerate}
+	\item We first allocate two vector \textbf{xr} and \textbf{xi} that represent the real part and the imaginary part of our vector. Those two vector are of type double and size N
+	\item We use the function \textbf{fillInput} to initialize the array. With got two options, we can opt to fill the vectors with constant numbers, 1 for xr, 0 for xi (Constant real signal case). We can also decide to use \textbf{rand()} to have random value for \textbf{xr} and \textbf{xi} bounded between -1 and 1. However, \textbf{rand()} is not thread safe. We will see why later. 
+	\item We allocate two arrays of output (\textbf{xr_o} and \textbf{xi_o}) and two array of control (\textbf{xr_check} and \textbf{xi_check}). We initialize those arrays with zeros.
+	\item We perform the computation of the Discrete Fourier Transform with \textbf{xr_O} and \textbf{xi_o} has a target and we do the same with the Inverse Discrete Fourier Transform with \textbf{xr_check} and \textbf{xi_check} 
+	
+	\item We then look if the result are correct by cheking if the inverse of DFT is equal to the base original x value.
+	
+\subsection{Further explaination on the computation of the DFT}
+
+The computation of the DFT used \textbf{two} interlockeed loop with a complexity of O($N^{2}$).Inside the loop,  we perform several multiplication and division as well as addition. The first element that we notice is that each lap of loop is independant as we only need to read \textbf{xr} or \textbf{xi}.
+	
+\end{enumerate}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

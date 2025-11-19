@@ -1,0 +1,16 @@
+Parallelise the following program corresponding to an implementation of the Discrete Fourier Transform algorithm. Disregard the aspects related to the error evaluation: the goal is to parallelise the code.
+
+The focus is on writing an exhaustive report about the code analysis (i.e. hotspot identification) and on the iterative process to speedup the application.
+
+You should discuss at least the following points:
+
+hotspot identification with NUMBERS (and screenshots). Don't say only that the main hotspot is the for loop in lines xx-yy, but that is a hotspot because it requires e.g. 80 seconds for a global time of 100 seconds;
+discuss possible vectorization issues/solutions with the report provided by the Intel compiler;
+define the BEST sequential time to be used as reference;
+present the performance using a PROPER number of threads and data size on the lab workstation (i.e. SW2), NOT on your PC;
+provide tables and charts regarding speedup and efficiency;
+do not consider data size resulting in sequential execution time < 30 seconds;
+discuss conclusions. 
+You can develop on your PC but the tests have to be performed in SW1 or SW2 AND using the Intel compiler.
+
+If you want you can upload a zip file containing the source code and the report in pdf to get a feedback. 

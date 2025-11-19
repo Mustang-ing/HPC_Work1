@@ -1,0 +1,10 @@
+
+=== Start: [2025/11/18 19:51:34] === 
+Peak bandwidth measurement started...
+Peak bandwidth measurement finished.
+Analysis started...
+Result file: /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/trc001/trc001.advixe 
+Application exit code: 1 
+Result file: /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/trc001/trc001.advixe 
+Analysis completed
+=== End: [2025/11/18 19:51:52] === 

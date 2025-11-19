@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <is_snapshot type="bool">true</is_snapshot>
+ <rdmgr>
+  <timestamp type="u64_t">1763491124</timestamp>
+  <hostname type="string">ingmustang-HP-ProBook-440-14-inch-G9-Notebook-PC</hostname>
+  <os type="string">linux</os>
+  <product type="string">Intel® Advisor 2025.3.0</product>
+  <buildNumber type="s32_t">616352</buildNumber>
+  <logicalCPUCount type="s32_t">12</logicalCPUCount>
+  <physicalCoreCount type="s32_t">10</physicalCoreCount>
+  <processorPackageCount type="s32_t">1</processorPackageCount>
+  <CPUFrequency type="s64_t">2500000000</CPUFrequency>
+  <CPUFamily type="s32_t">6</CPUFamily>
+  <CPUModel type="s32_t">154</CPUModel>
+  <CPUStepping type="s32_t">4</CPUStepping>
+  <CPUBrandName type="string">12th Gen Intel(R) Core(TM) i5-1235U</CPUBrandName>
+  <isa type="string">avx2</isa>
+  <outputDirectory type="string">/home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/Test1</outputDirectory>
+ </rdmgr>
+</root>

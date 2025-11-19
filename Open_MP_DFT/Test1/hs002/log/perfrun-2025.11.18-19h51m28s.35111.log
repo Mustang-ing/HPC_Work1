@@ -1,0 +1,95 @@
+2 [140257532041152] INFO perfrun.launcher <> - Launcher main begin
+3 [140257532041152] INFO perfrun.launcher <> - MessageCatalogInit finished
+3 [140257532041152] INFO perfrun.launcher <> - Launcher instance created
+4 [140257532041152] INFO perfrun.launcher <> - argc = 7; cmdline = /opt/intel/oneapi/advisor/2025.3/bin64/advixe-runss --ui-output-format xml --ui-output-fd 195 --option-file /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/hs002/config/runss.options 
+81 [140257532041152] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+81 [140257532041152] INFO perfrun.launcher <> - create file finder object
+81 [140257532041152] INFO perfrun.launcher <> - create a result directory: pattern = /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/hs002 pid = 4294967295
+111 [140257532041152] INFO perfrun.sdk <> - checked that the directory /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/hs002 is a local directory
+111 [140257532041152] INFO perfrun.sdk <> - the directory /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/hs002 is a local directory with FS type ID 61267
+111 [140257532041152] INFO perfrun.launcher <> - create data directory = /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/hs002/data.0
+111 [140257532041152] INFO perfrun.launcher <> - Creating the master collection flag
+115 [140257532041152] INFO perfrun.launcher <> - Done creating the master collection flag
+117 [140257378952768] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+117 [140257378952768] INFO perfrun.sdk <> - Allocating TMU :/home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/hs002/data.0/systemcollector-35111-ingmustang-HP-ProBook-440-14-inch-G9-Notebook-PC.sc
+117 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+117 [140257378952768] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+117 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+117 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+117 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+117 [140257378952768] INFO perfrun.mrte <> - system-wide mode is 0
+117 [140257378952768] INFO perfrun.mrte <> - Getting  mrte profiling environment ...
+125 [140257378952768] INFO perfrun.mrte <> - INTEL_MRTE_DATA_DIR=/home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/hs002/data.0
+125 [140257378952768] INFO perfrun.mrte <> - INTEL_MRTE_HOST_NAME=ingmustang-HP-ProBook-440-14-inch-G9-Notebook-PC
+125 [140257378952768] INFO perfrun.mrte <> - JAVA_TOOL_OPTIONS=-agentlib:advixe_samplingmrte_javaprof_1.0 -Dsun.boot.library.path=/opt/intel/oneapi/advisor/2025.3/lib32/runtime:/opt/intel/oneapi/advisor/2025.3/lib64/runtime
+125 [140257378952768] INFO perfrun.mrte <> - LD_LIBRARY_PATH=/opt/intel/oneapi/advisor/2025.3/lib32/runtime:/opt/intel/oneapi/advisor/2025.3/lib64/runtime:/home/ing-mustang/Program_externe/intel/oneapi/tcm/1.4/lib:/home/ing-mustang/Program_externe/intel/oneapi/umf/0.11/lib:/home/ing-mustang/Program_externe/intel/oneapi/tbb/2022.2/env/../lib/intel64/gcc4.8:/home/ing-mustang/Program_externe/intel/oneapi/pti/0.13/lib:/home/ing-mustang/Program_externe/intel/oneapi/mpi/2021.16/opt/mpi/libfabric/lib:/home/ing-mustang/Program_externe/intel/oneapi/mpi/2021.16/lib:/home/ing-mustang/Program_externe/intel/oneapi/mkl/2025.2/lib:/home/ing-mustang/Program_externe/intel/oneapi/ishmem/1.4/lib:/home/ing-mustang/Program_externe/intel/oneapi/ippcp/2025.2/lib/:/home/ing-mustang/Program_externe/intel/oneapi/ipp/2022.2/lib:/home/ing-mustang/Program_externe/intel/oneapi/dnnl/2025.2/lib:/home/ing-mustang/Program_externe/intel/oneapi/debugger/2025.2/opt/debugger/lib:/home/ing-mustang/Program_externe/intel/oneapi/compiler/2025.2/opt/compiler/lib:/home/ing-mustang/Program_externe/intel/oneapi/compiler/2025.2/lib:/home/ing-mustang/Program_externe/intel/oneapi/ccl/2021.16/lib/
+125 [140257378952768] INFO perfrun.mrte <> - Data directory: /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/hs002/data.0
+125 [140257378952768] INFO perfrun.mrte <> - Mrte plugin is initialized
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.tpss <> - initialize tpss controller
+125 [140257378952768] INFO perfrun.tpss <> - configure collection mode: value = cpu:stack
+125 [140257378952768] INFO perfrun.tpss <> - default obj-size-min=1024
+125 [140257378952768] INFO perfrun.tpss <> - default hash-table-size=0
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+125 [140257378952768] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /opt/intel/oneapi/advisor/2025.3/lib32/runtime:/opt/intel/oneapi/advisor/2025.3/lib64/runtime:/home/ing-mustang/Program_externe/intel/oneapi/tcm/1.4/lib:/home/ing-mustang/Program_externe/intel/oneapi/umf/0.11/lib:/home/ing-mustang/Program_externe/intel/oneapi/tbb/2022.2/env/../lib/intel64/gcc4.8:/home/ing-mustang/Program_externe/intel/oneapi/pti/0.13/lib:/home/ing-mustang/Program_externe/intel/oneapi/mpi/2021.16/opt/mpi/libfabric/lib:/home/ing-mustang/Program_externe/intel/oneapi/mpi/2021.16/lib:/home/ing-mustang/Program_externe/intel/oneapi/mkl/2025.2/lib:/home/ing-mustang/Program_externe/intel/oneapi/ishmem/1.4/lib:/home/ing-mustang/Program_externe/intel/oneapi/ippcp/2025.2/lib/:/home/ing-mustang/Program_externe/intel/oneapi/ipp/2022.2/lib:/home/ing-mustang/Program_externe/intel/oneapi/dnnl/2025.2/lib:/home/ing-mustang/Program_externe/intel/oneapi/debugger/2025.2/opt/debugger/lib:/home/ing-mustang/Program_externe/intel/oneapi/compiler/2025.2/opt/compiler/lib:/home/ing-mustang/Program_externe/intel/oneapi/compiler/2025.2/lib:/home/ing-mustang/Program_externe/intel/oneapi/ccl/2021.16/lib/
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = /opt/intel/oneapi/advisor/2025.3/lib32/runtime/libittnotify_collector.so
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = /opt/intel/oneapi/advisor/2025.3/lib64/runtime/libittnotify_collector.so
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = /opt/intel/oneapi/advisor/2025.3/lib32/runtime/libittnotify_collector.so
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = /opt/intel/oneapi/advisor/2025.3/lib64/runtime/libittnotify_collector.so
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: CCL_ITT_LEVEL = 1
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES = 0
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES_MODE = 0
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_DATA_DIR = /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/hs002/data.0
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_HOST_NAME = ingmustang-HP-ProBook-440-14-inch-G9-Notebook-PC
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: JAVA_TOOL_OPTIONS = -agentlib:advixe_samplingmrte_javaprof_1.0 -Dsun.boot.library.path=/opt/intel/oneapi/advisor/2025.3/lib32/runtime:/opt/intel/oneapi/advisor/2025.3/lib64/runtime
+126 [140257532041152] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /opt/intel/oneapi/advisor/2025.3/lib32/runtime:/opt/intel/oneapi/advisor/2025.3/lib64/runtime:/home/ing-mustang/Program_externe/intel/oneapi/tcm/1.4/lib:/home/ing-mustang/Program_externe/intel/oneapi/umf/0.11/lib:/home/ing-mustang/Program_externe/intel/oneapi/tbb/2022.2/env/../lib/intel64/gcc4.8:/home/ing-mustang/Program_externe/intel/oneapi/pti/0.13/lib:/home/ing-mustang/Program_externe/intel/oneapi/mpi/2021.16/opt/mpi/libfabric/lib:/home/ing-mustang/Program_externe/intel/oneapi/mpi/2021.16/lib:/home/ing-mustang/Program_externe/intel/oneapi/mkl/2025.2/lib:/home/ing-mustang/Program_externe/intel/oneapi/ishmem/1.4/lib:/home/ing-mustang/Program_externe/intel/oneapi/ippcp/2025.2/lib/:/home/ing-mustang/Program_externe/intel/oneapi/ipp/2022.2/lib:/home/ing-mustang/Program_externe/intel/oneapi/dnnl/2025.2/lib:/home/ing-mustang/Program_externe/intel/oneapi/debugger/2025.2/opt/debugger/lib:/home/ing-mustang/Program_externe/intel/oneapi/compiler/2025.2/opt/compiler/lib:/home/ing-mustang/Program_externe/intel/oneapi/compiler/2025.2/lib:/home/ing-mustang/Program_externe/intel/oneapi/ccl/2021.16/lib/
+126 [140257532041152] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+127 [140257532041152] INFO perfrun.launcher <> - Launcher: command line to start before modification = /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/release/omp_homework_vectorised
+127 [140257532041152] INFO perfrun.launcher <> - Launcher: command line to start after modification = /opt/intel/oneapi/advisor/2025.3/bin64/pin -error_file /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/hs002/data.0/pinerr.tpsslog -detach_reattach -follow_execv -tool_load_option deepbind -t64 /opt/intel/oneapi/advisor/2025.3/lib64/libtpsstool.so -t /opt/intel/oneapi/advisor/2025.3/lib32/libtpsstool.so -server_name tpss_ipc.35111 -prd_dir /opt/intel/oneapi/advisor/2025.3 -- /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/release/omp_homework_vectorised
+127 [140257532041152] INFO perfrun.launcher <> - ProcessCreator object was created
+127 [140257532041152] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+129 [140257378952768] WARN perfrun.system <> - Could not do anything with /sys/kernel/debug/kvm: boost::filesystem::status: Permission denied [system:13]: "/sys/kernel/debug/kvm", at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:787
+129 [140257378952768] WARN perfrun.system <> - Folder "/var/run/libvirt/qemu/"doesn't exist, at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:800
+129 [140257378952768] WARN perfrun.sdk <> - Failed to find xl binary on any of the system paths: /bin, /sbin, /usr/bin, /usr/sbin., at file: vcs/perfrun1/sdk/src/utils.cpp:205
+133 [140257378952768] INFO perfrun.vdso <> - Helper runtool '/opt/intel/oneapi/advisor/2025.3/bin32/advixe-runss -dump-vdso -r /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/hs002 --tmp-dir /tmp/advixe-tmp-ing-mustang' returned 1
+209 [140257378952768] INFO perfrun.vdso <> - Helper runtool '/opt/intel/oneapi/advisor/2025.3/bin64/advixe-runss -dump-vdso -r /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/hs002 --tmp-dir /tmp/advixe-tmp-ing-mustang' returned 0
+209 [140257378952768] INFO perfrun.itt <> - start itt controller for pid #35124
+209 [140257378952768] INFO perfrun.tpss <> - start tpss controller for pid #35124
+260 [140257532041152] INFO perfrun.launcher <> - Launcher: all plugins were started
+260 [140257532041152] INFO perfrun.launcher <> - DirectoryMonitor object was created
+260 [140257532041152] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+260 [140257532041152] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+260 [140257532041152] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+261 [140257532041152] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+266 [140257532041152] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+1735 [140257532041152] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 1
+1744 [140257378952768] INFO perfrun.itt <> - detach itt controller
+1744 [140257378952768] INFO perfrun.itt <> - detach itt controller done
+1744 [140257378952768] INFO perfrun.tpss <> - stop tpss controller
+1745 [140257378952768] INFO perfrun.sdk <> - De-allocating TMU: /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/hs002/data.0/systemcollector-35111-ingmustang-HP-ProBook-440-14-inch-G9-Notebook-PC.sc
+1745 [140257378952768] INFO perfrun.system <> - closed the system trace file: /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT/e000/hs002/data.0/systemcollector-35111-ingmustang-HP-ProBook-440-14-inch-G9-Notebook-PC.sc
+1745 [140257532041152] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+1745 [140257532041152] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+1746 [140257532041152] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+1746 [140257532041152] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+1746 [140257532041152] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:226
+1747 [140257532041152] INFO perfrun.launcher <> - Application exit code: 1
+1747 [140257532041152] INFO perfrun.launcher <> - Exit code: 1
