@@ -13,7 +13,7 @@ LOOP BEGIN at src/omp_homework.c (100, 3)
     remark #15477: vector cost: 1.593750 
     remark #15478: estimated potential speedup: 1.875000 
     remark #15309: vectorization support: normalized vectorization overhead 0.000000
-    remark #15570: using scalar loop trip count: 10000
+    remark #15570: using scalar loop trip count: 50000
     remark #15488: --- end vector loop cost summary ---
     remark #15447: --- begin vector loop memory reference summary ---
     remark #15451: unmasked unaligned unit stride stores: 1 
@@ -31,13 +31,13 @@ LOOP BEGIN at src/omp_homework.c (71, 3)
         remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 30) ] 
         remark #15389: vectorization support: unmasked unaligned unit stride load: [dbg info n/a]
         remark #15389: vectorization support: unmasked unaligned unit stride load: [dbg info n/a]
-        remark #15389: vectorization support: unmasked unaligned unit stride load: xi xi xi xi [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 58) ] 
+        remark #15389: vectorization support: unmasked unaligned unit stride load: xi xi xi xi [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 90) ] 
         remark #15475: --- begin vector loop cost summary ---
         remark #15476: scalar cost: 98.000000 
         remark #15477: vector cost: 32.953125 
         remark #15478: estimated potential speedup: 2.968750 
         remark #15309: vectorization support: normalized vectorization overhead 0.234375
-        remark #15570: using scalar loop trip count: 10000
+        remark #15570: using scalar loop trip count: 50000
         remark #15482: vectorized math library calls: 1 
         remark #15488: --- end vector loop cost summary ---
         remark #15447: --- begin vector loop memory reference summary ---
@@ -45,8 +45,8 @@ LOOP BEGIN at src/omp_homework.c (71, 3)
         remark #15451: unmasked unaligned unit stride stores: 2 
         remark #15474: --- end vector loop memory reference summary ---
         remark #25587: Loop has reduction
-        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:75:19 @[ src/omp_homework.c:43:5 ]]
-        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:77:19 @[ src/omp_homework.c:43:5 ]]
+        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:75:19 @[ src/omp_homework.c:45:5 ]]
+        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:77:19 @[ src/omp_homework.c:45:5 ]]
     LOOP END
 LOOP END
 
@@ -61,13 +61,13 @@ LOOP BEGIN at src/omp_homework.c (71, 3)
         remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 30) ] 
         remark #15389: vectorization support: unmasked unaligned unit stride load: [dbg info n/a]
         remark #15389: vectorization support: unmasked unaligned unit stride load: [dbg info n/a]
-        remark #15389: vectorization support: unmasked unaligned unit stride load: Xi_r Xi_o Xi_o [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 58) ] 
+        remark #15389: vectorization support: unmasked unaligned unit stride load: Xi_r Xi_o Xi_o [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 90) ] 
         remark #15475: --- begin vector loop cost summary ---
         remark #15476: scalar cost: 98.000000 
         remark #15477: vector cost: 32.953125 
         remark #15478: estimated potential speedup: 2.968750 
         remark #15309: vectorization support: normalized vectorization overhead 0.234375
-        remark #15570: using scalar loop trip count: 10000
+        remark #15570: using scalar loop trip count: 50000
         remark #15482: vectorized math library calls: 1 
         remark #15488: --- end vector loop cost summary ---
         remark #15447: --- begin vector loop memory reference summary ---
@@ -75,8 +75,8 @@ LOOP BEGIN at src/omp_homework.c (71, 3)
         remark #15451: unmasked unaligned unit stride stores: 2 
         remark #15474: --- end vector loop memory reference summary ---
         remark #25587: Loop has reduction
-        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:75:19 @[ src/omp_homework.c:46:5 ]]
-        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:77:19 @[ src/omp_homework.c:46:5 ]]
+        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:75:19 @[ src/omp_homework.c:48:5 ]]
+        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:77:19 @[ src/omp_homework.c:48:5 ]]
     LOOP END
 LOOP END
 
@@ -92,114 +92,7 @@ LOOP BEGIN at src/omp_homework.c (84, 5)
     remark #15477: vector cost: 3.031250 
     remark #15478: estimated potential speedup: 2.625000 
     remark #15309: vectorization support: normalized vectorization overhead 0.000000
-    remark #15570: using scalar loop trip count: 10000
-    remark #15488: --- end vector loop cost summary ---
-    remark #15447: --- begin vector loop memory reference summary ---
-    remark #15450: unmasked unaligned unit stride loads: 2 
-    remark #15451: unmasked unaligned unit stride stores: 2 
-    remark #15474: --- end vector loop memory reference summary ---
-LOOP END
-
-LOOP BEGIN at src/omp_homework.c (124, 3)
-    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
-LOOP END
-=================================================================
-
-Begin optimization report for: main.V
-
-LOOP BEGIN at src/omp_homework.c (98, 3)
-    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
-LOOP END
-
-LOOP BEGIN at src/omp_homework.c (100, 3)
-    remark #15300: LOOP WAS VECTORIZED
-    remark #15305: vectorization support: vector length 4
-    remark #15389: vectorization support: unmasked unaligned unit stride store: xr xr xr xr [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (105, 6) ] 
-    remark #15475: --- begin vector loop cost summary ---
-    remark #15476: scalar cost: 3.000000 
-    remark #15477: vector cost: 1.593750 
-    remark #15478: estimated potential speedup: 1.875000 
-    remark #15309: vectorization support: normalized vectorization overhead 0.000000
-    remark #15570: using scalar loop trip count: 10000
-    remark #15488: --- end vector loop cost summary ---
-    remark #15447: --- begin vector loop memory reference summary ---
-    remark #15451: unmasked unaligned unit stride stores: 1 
-    remark #15474: --- end vector loop memory reference summary ---
-LOOP END
-
-LOOP BEGIN at src/omp_homework.c (71, 3)
-    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
-
-    LOOP BEGIN at src/omp_homework.c (73, 7)
-        remark #15300: LOOP WAS VECTORIZED
-        remark #15305: vectorization support: vector length 4
-        remark #15389: vectorization support: unmasked unaligned unit stride load: xr xr xr xr [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 22) ] 
-        remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 30) ] 
-        remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 30) ] 
-        remark #15389: vectorization support: unmasked unaligned unit stride load: [dbg info n/a]
-        remark #15389: vectorization support: unmasked unaligned unit stride load: [dbg info n/a]
-        remark #15389: vectorization support: unmasked unaligned unit stride load: xi xi xi xi [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 58) ] 
-        remark #15475: --- begin vector loop cost summary ---
-        remark #15476: scalar cost: 98.000000 
-        remark #15477: vector cost: 32.953125 
-        remark #15478: estimated potential speedup: 2.968750 
-        remark #15309: vectorization support: normalized vectorization overhead 0.234375
-        remark #15570: using scalar loop trip count: 10000
-        remark #15482: vectorized math library calls: 1 
-        remark #15488: --- end vector loop cost summary ---
-        remark #15447: --- begin vector loop memory reference summary ---
-        remark #15450: unmasked unaligned unit stride loads: 4 
-        remark #15451: unmasked unaligned unit stride stores: 2 
-        remark #15474: --- end vector loop memory reference summary ---
-        remark #25587: Loop has reduction
-        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:75:19 @[ src/omp_homework.c:43:5 ]]
-        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:77:19 @[ src/omp_homework.c:43:5 ]]
-    LOOP END
-LOOP END
-
-LOOP BEGIN at src/omp_homework.c (71, 3)
-    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
-
-    LOOP BEGIN at src/omp_homework.c (73, 7)
-        remark #15300: LOOP WAS VECTORIZED
-        remark #15305: vectorization support: vector length 4
-        remark #15389: vectorization support: unmasked unaligned unit stride load: Xr_o Xr_o Xr_o [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 22) ] 
-        remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 30) ] 
-        remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 30) ] 
-        remark #15389: vectorization support: unmasked unaligned unit stride load: [dbg info n/a]
-        remark #15389: vectorization support: unmasked unaligned unit stride load: [dbg info n/a]
-        remark #15389: vectorization support: unmasked unaligned unit stride load: Xi_r Xi_o Xi_o [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 58) ] 
-        remark #15475: --- begin vector loop cost summary ---
-        remark #15476: scalar cost: 98.000000 
-        remark #15477: vector cost: 32.953125 
-        remark #15478: estimated potential speedup: 2.968750 
-        remark #15309: vectorization support: normalized vectorization overhead 0.234375
-        remark #15570: using scalar loop trip count: 10000
-        remark #15482: vectorized math library calls: 1 
-        remark #15488: --- end vector loop cost summary ---
-        remark #15447: --- begin vector loop memory reference summary ---
-        remark #15450: unmasked unaligned unit stride loads: 4 
-        remark #15451: unmasked unaligned unit stride stores: 2 
-        remark #15474: --- end vector loop memory reference summary ---
-        remark #25587: Loop has reduction
-        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:75:19 @[ src/omp_homework.c:46:5 ]]
-        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:77:19 @[ src/omp_homework.c:46:5 ]]
-    LOOP END
-LOOP END
-
-LOOP BEGIN at src/omp_homework.c (84, 5)
-    remark #15300: LOOP WAS VECTORIZED
-    remark #15305: vectorization support: vector length 4
-    remark #15389: vectorization support: unmasked unaligned unit stride load: xr_check xr_check [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (85, 15) ] 
-    remark #15389: vectorization support: unmasked unaligned unit stride store: xr_check xr_check [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (85, 7) ] 
-    remark #15389: vectorization support: unmasked unaligned unit stride load: xi_check xi_check [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (86, 15) ] 
-    remark #15389: vectorization support: unmasked unaligned unit stride store: xi_check xi_check [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (86, 7) ] 
-    remark #15475: --- begin vector loop cost summary ---
-    remark #15476: scalar cost: 8.000000 
-    remark #15477: vector cost: 3.031250 
-    remark #15478: estimated potential speedup: 2.625000 
-    remark #15309: vectorization support: normalized vectorization overhead 0.000000
-    remark #15570: using scalar loop trip count: 10000
+    remark #15570: using scalar loop trip count: 50000
     remark #15488: --- end vector loop cost summary ---
     remark #15447: --- begin vector loop memory reference summary ---
     remark #15450: unmasked unaligned unit stride loads: 2 
@@ -227,7 +120,7 @@ LOOP BEGIN at src/omp_homework.c (100, 3)
     remark #15477: vector cost: 1.593750 
     remark #15478: estimated potential speedup: 1.875000 
     remark #15309: vectorization support: normalized vectorization overhead 0.000000
-    remark #15570: using scalar loop trip count: 10000
+    remark #15570: using scalar loop trip count: 50000
     remark #15488: --- end vector loop cost summary ---
     remark #15447: --- begin vector loop memory reference summary ---
     remark #15451: unmasked unaligned unit stride stores: 1 
@@ -245,13 +138,13 @@ LOOP BEGIN at src/omp_homework.c (71, 3)
         remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 30) ] 
         remark #15389: vectorization support: unmasked unaligned unit stride load: [dbg info n/a]
         remark #15389: vectorization support: unmasked unaligned unit stride load: [dbg info n/a]
-        remark #15389: vectorization support: unmasked unaligned unit stride load: xi xi xi xi [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 58) ] 
+        remark #15389: vectorization support: unmasked unaligned unit stride load: xi xi xi xi [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 90) ] 
         remark #15475: --- begin vector loop cost summary ---
         remark #15476: scalar cost: 98.000000 
         remark #15477: vector cost: 32.953125 
         remark #15478: estimated potential speedup: 2.968750 
         remark #15309: vectorization support: normalized vectorization overhead 0.234375
-        remark #15570: using scalar loop trip count: 10000
+        remark #15570: using scalar loop trip count: 50000
         remark #15482: vectorized math library calls: 1 
         remark #15488: --- end vector loop cost summary ---
         remark #15447: --- begin vector loop memory reference summary ---
@@ -259,8 +152,8 @@ LOOP BEGIN at src/omp_homework.c (71, 3)
         remark #15451: unmasked unaligned unit stride stores: 2 
         remark #15474: --- end vector loop memory reference summary ---
         remark #25587: Loop has reduction
-        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:75:19 @[ src/omp_homework.c:43:5 ]]
-        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:77:19 @[ src/omp_homework.c:43:5 ]]
+        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:75:19 @[ src/omp_homework.c:45:5 ]]
+        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:77:19 @[ src/omp_homework.c:45:5 ]]
     LOOP END
 LOOP END
 
@@ -275,13 +168,13 @@ LOOP BEGIN at src/omp_homework.c (71, 3)
         remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 30) ] 
         remark #15389: vectorization support: unmasked unaligned unit stride load: [dbg info n/a]
         remark #15389: vectorization support: unmasked unaligned unit stride load: [dbg info n/a]
-        remark #15389: vectorization support: unmasked unaligned unit stride load: Xi_r Xi_o Xi_o [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 58) ] 
+        remark #15389: vectorization support: unmasked unaligned unit stride load: Xi_r Xi_o Xi_o [ /home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/src/omp_homework.c (75, 90) ] 
         remark #15475: --- begin vector loop cost summary ---
         remark #15476: scalar cost: 98.000000 
         remark #15477: vector cost: 32.953125 
         remark #15478: estimated potential speedup: 2.968750 
         remark #15309: vectorization support: normalized vectorization overhead 0.234375
-        remark #15570: using scalar loop trip count: 10000
+        remark #15570: using scalar loop trip count: 50000
         remark #15482: vectorized math library calls: 1 
         remark #15488: --- end vector loop cost summary ---
         remark #15447: --- begin vector loop memory reference summary ---
@@ -289,8 +182,8 @@ LOOP BEGIN at src/omp_homework.c (71, 3)
         remark #15451: unmasked unaligned unit stride stores: 2 
         remark #15474: --- end vector loop memory reference summary ---
         remark #25587: Loop has reduction
-        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:75:19 @[ src/omp_homework.c:46:5 ]]
-        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:77:19 @[ src/omp_homework.c:46:5 ]]
+        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:75:19 @[ src/omp_homework.c:48:5 ]]
+        remark #15590: vectorization support: add reduction with value type double [src/omp_homework.c:77:19 @[ src/omp_homework.c:48:5 ]]
     LOOP END
 LOOP END
 
@@ -306,7 +199,7 @@ LOOP BEGIN at src/omp_homework.c (84, 5)
     remark #15477: vector cost: 3.031250 
     remark #15478: estimated potential speedup: 2.625000 
     remark #15309: vectorization support: normalized vectorization overhead 0.000000
-    remark #15570: using scalar loop trip count: 10000
+    remark #15570: using scalar loop trip count: 50000
     remark #15488: --- end vector loop cost summary ---
     remark #15447: --- begin vector loop memory reference summary ---
     remark #15450: unmasked unaligned unit stride loads: 2 

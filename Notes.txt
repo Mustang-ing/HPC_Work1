@@ -1,0 +1,34 @@
+It's really important to have a big number (Exec should take minutes
+
+Login : esame
+Mdp : Esame1516
+
+Computing time (SW2 machine) : 
+
+
+
+Make a graph that compare computing time in function of N (In addition the specific computing of hotspot)
+Result1 : N=10000 : 0.43s total | 50.5% on the loop - 31,4% on computing cos
+Result2 : N = 25000 : 2.66s T | same pourcentage  
+Result3 : N = 50000 : 10.90s T | 49.4% on the DFT Loop - 26,8% on cos and 7.1% on sin
+Result2 : N=75000 -->  22.36q T | 49,6% (dft) - 24,9%(cos) - 8.1(sin)
+Result3 : N=100000 --> 50.94s T | 49,8% (dft) - 25,9%(cos) - 5.9%(sin)
+Field of improvement : 
+
+- Aligned Data >>Better cache access 
+- Avoid function call >> Save register call
+- Aliasing : Vectorisation report does not complain about possible vector dependance so not necessary
+- Normalize data type ?
+
+On SW2 Computer
+
+From Advisor : 
+50% of computing time in main is spent on DFT (Normal and Inversed)
+
+On DFT the biggest hotspot is the outer loop (lol), then it's also the inner loop
+
+On the inner loop of DFT, the biggest hotspot is the computation of cosinus (33% of computing time). The instruction are vectorised to handle the computation of cos.
+
+
+From reports : 
+Nothing substantial 

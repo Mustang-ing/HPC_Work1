@@ -948,7 +948,7 @@
    <release type="string">release</release>
   </per_group_workloads>
   <packed_snapshot>
-   <path type="string"></path>
+   <path type="string">/home/ing-mustang/Desktop/Sup_Galilee/3e_annee/Unige/High_Performance_Computing/Additionnal_homework/OpenMP/Open_MP_DFT</path>
   </packed_snapshot>
  </All_Configurations-All_Platforms>
 </root>

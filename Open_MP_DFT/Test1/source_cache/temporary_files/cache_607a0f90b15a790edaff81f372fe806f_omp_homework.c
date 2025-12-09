@@ -10,7 +10,6 @@
 #define PI2 6.28318530718
 #define R_ERROR 0.01
 
-
 int DFT(int idft, double* xr, double* xi, double* Xr_o, double* Xi_o, int N);
 int fillInput(double* xr, double* xi, int N);
 int setOutputZero(double* Xr_o, double* Xi_o, int N);
@@ -20,8 +19,7 @@ int printResults(double* xr, double* xi, int N);
 
 int main(int argc, char* argv[]){
 // size of input array
- 
-    int N = 50000;
+    int N = 10000;
     printf("DFTW calculation with N = %d \n",N);
 
     double* xr = (double*) malloc (N *sizeof(double));
@@ -43,10 +41,11 @@ int main(int argc, char* argv[]){
     // DFT
     int idft = 1;
     DFT(idft,xr,xi,Xr_o,Xi_o,N);
-     // IDFT
+    // IDFT
     idft = -1;
     DFT(idft,Xr_o,Xi_o,xr_check,xi_check,N);
-       // stop timer
+
+    // stop timer
     double run_time = omp_get_wtime() - start_time;
     printf("DFTW computation in %f seconds\n",run_time);
 
@@ -65,16 +64,17 @@ int main(int argc, char* argv[]){
       return 1;
 }
 
-// Derative of original DFT with only double
+// DFT/IDFT routine
+// idft: 1 direct DFT, -1 inverse IDFT (Inverse DFT)
 int DFT(int idft, double* xr, double* xi, double* Xr_o, double* Xi_o, int N){
   int k, n;
   for (k=0 ; k<N ; k++)
   {
       for (n=0 ; n<N ; n++)  {
         // Real part of X[k]
-          Xr_o[k] += xr[n] * cos((double)n * (double)k * PI2 / (double)N) + (double)idft*xi[n]*sin((double)n * (double)k * PI2 / (double)N);
+          Xr_o[k] += xr[n] * cos(n * k * PI2 / N) + idft*xi[n]*sin(n * k * PI2 / N);
           // Imaginary part of X[k]
-          Xi_o[k] += -(double)idft*xr[n] * sin((double)n * (double)k * PI2 / (double)N) + xi[n] * cos((double)n * (double)k * PI2 / (double)N);
+          Xi_o[k] += -idft*xr[n] * sin(n * k * PI2 / N) + xi[n] * cos(n * k * PI2 / N);
 
       }
   }
@@ -82,8 +82,8 @@ int DFT(int idft, double* xr, double* xi, double* Xr_o, double* Xi_o, int N){
   // normalize if you are doing IDFT
   if (idft==-1){
     for (n=0 ; n<N ; n++){
-      Xr_o[n] /=(double)N;
-      Xi_o[n] /=(double)N;
+      Xr_o[n] /=N;
+      Xi_o[n] /=N;
     }
   }
   return 1;
